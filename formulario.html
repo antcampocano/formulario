@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro Escolar</h1>
+        <p id="subtitulo">Complete as informações</p>
+        <br>
+    </div>
+
+    <form>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+    
+    <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
+            </div>
+    
+    <div class="campo">
+        <label><strong>Gênero</strong></label>
+        <label>
+            <input type="radio" name="genero" value="masculino">Masculino
+        </label>
+   <label>
+       <input type="radio" name="genero" value="feminino">Feminino
+   </label>
+   <label>
+       <input type="radio" name="genero" value="não-binario">Não-Binario
+       </label>
+       
+       <labe>
+           <input type="radio" name="genero" value="outros">Outros
+       </label>
+    </div>
+
+    <div class="campo">
+        <label for="serie"><strong>Serie    </strong></label>
+        <select id="serie">
+            <option selected disable value="">Selecione</option>
+        <option>1º Grau</option>
+        <option>2º Grau</option>
+        <option>3º Grau</option>
+    </select>
+    </div>
+<div class="campo">
+    <label for="idade"><strong>Idade</strong></label>
+    <select id="idade">
+        <option selected disable value="">Selecione</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>Outros</option>
+    </select>
+</div>
+<fieldset class="grupo">
+          <div id="check">
+            <label><strong>Materias:</strong></label><br><br>
+            <input type="checkbox" id="materia1" name="materia2" value="portugues">
+            <label for="materia1">Português</label>
+            <input type="checkbox" id="materia2" name="materia2" value="matematica">
+            <label for="materia2">Matemática</label>
+            <input type="checkbox" id="materia3" name="materia3" value="ingles">
+            <label for="materia3">Inglês</label>
+            <input type="checkbox" id="materia4" name="materia4" value="espanhol">
+            <label for="materia4">Espanhol</label>
+            <input type="checkbox" id="materia5" name="materia5" value="geografia">
+            <label for="materia5">Geografia</label>
+            <input type="checkbox" id="materia6" name="materia6" value="historia">
+            <label for="materia6">Historia</label>
+            <input type="checkbox" id="materia7" name="materia7" value="fisica">
+            <label for="materia7">Fisica</label>
+            <input type="checkbox" id="materia8" name="materia8" value="quimica">
+            <label for="materia8">Quimica</label>
+        </div>
+    </fieldset>
+    <div class="campo">
+        <br>
+        <label for="aulas"><strong>Conte um pouco de como você gosta de ter suas aulas apresentadas: </strong></label>
+        <textarea row="6" style="width:33em" id="aulas" name="aulas"></textarea>
+    </div>
+    <button class="botao" type="submit" onsubmit="">Concluido</button>
+        </form>
+</body>
+</html>
